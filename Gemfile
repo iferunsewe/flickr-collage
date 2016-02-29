@@ -6,3 +6,4 @@ gemspec
 gem 'rmagick'
 gem 'httparty'
 gem 'flickraw'
+gem 'pry-byebug'
