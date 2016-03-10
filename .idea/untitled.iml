@@ -30,6 +30,7 @@
     <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.5.5, RVM: ruby-2.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pry (v0.10.2, RVM: ruby-2.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pry-byebug (v3.2.0, RVM: ruby-2.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v10.4.2, RVM: ruby-2.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rmagick (v2.15.4, RVM: ruby-2.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="slop (v3.6.0, RVM: ruby-2.2.2) [gem]" level="application" />
   </component>
