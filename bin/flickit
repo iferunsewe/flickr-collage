@@ -2,7 +2,7 @@
 
 require 'flickit'
 
-@keywords_controller = FlickIt::KeywordsController.new(ARGV)
+@keywords_controller = FlickIt::KeywordsController.new
 @collage = FlickIt::Collage.new
 
 photos = @keywords_controller.get_photos_for_keywords

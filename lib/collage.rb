@@ -9,7 +9,7 @@ module FlickIt
     def create(photos)
       added_local_image_files = add_local_image_files(photos)
       add_to_images_list(added_local_image_files)
-      montage_it.write('./flickr_collage.jpg')
+      montage_it.write(ENV['HOME'] + '/Desktop/flickr_collage.jpg')
       puts "CREATED COLLAGE"
     end
     # Removes images from image folder 

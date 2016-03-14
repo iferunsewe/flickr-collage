@@ -1,13 +1,12 @@
 module FlickIt
   class KeywordsController
-    def initialize(arguments=[])
+    def initialize
       @flickr_api = FlickrApi.new
-      @arguments = arguments
     end
 
     # Gets keywords from command line and creates an array of images for the keywords. Fills the array with random key word if there are less than 10 words entered or replaces the word if a photo is not found
     def get_photos_for_keywords
-      keywords = @arguments.map do |keyword|
+      keywords = ARGV.map do |keyword|
         puts "Getting photos for #{keyword}"
         photo_results = @flickr_api.get_flickr_search_result(keyword)
         if photo_results.nil?

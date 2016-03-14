@@ -23,7 +23,7 @@ module FlickIt
       response
     end
 
-    # Api call for the search method in the flickr api
+    # Api call for the search method in the flickr api, sorted by the most interesting photos
     def get_flickr_search_result(keyword)
       response = request_flickr_api('flickr.photos.search', {"tags" => keyword, "sort" => 'interestingness-desc'})
       photos = response["rsp"]["photos"]["photo"]
@@ -39,24 +39,8 @@ module FlickIt
     def sort_results(keyword_results = get_flickr_results)
       keyword_results.map! do |results|
         results.first
-        # selected_id = results.max_by do |result|
-        # end['id']
-        # selected_id
       end
       keyword_results
-    end
-
-    def get_favourite(photo_id)
-      request_flickr_api("flickr.photos.getFavorites", {"photo_id" => photo_id})
-    end
-
-
-    def get_total(photo_id)
-      get_favourite(photo_id)['rsp']['photo']['total']
-    end
-
-    def download_photo_sizes(photo_id)
-      request_flickr_api("flickr.photos.getSizes", {"photo_id" => photo_id})
     end
   end
 end
