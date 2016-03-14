@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="245e7601-6197-423d-ad03-1cc17563422b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flickit-0.1.0.gem" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/flickr_collage.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/untitled.iml" afterPath="$PROJECT_DIR$/.idea/untitled.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/flickit" afterPath="$PROJECT_DIR$/bin/flickit" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flickit.gemspec" afterPath="$PROJECT_DIR$/flickit.gemspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/collage.rb" afterPath="$PROJECT_DIR$/lib/collage.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/flickit.rb" afterPath="$PROJECT_DIR$/lib/flickit.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/flickr_api.rb" afterPath="$PROJECT_DIR$/lib/flickr_api.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/keywords_controller.rb" afterPath="$PROJECT_DIR$/lib/keywords_controller.rb" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,8 +27,8 @@
       <file leaf-file-name="flickit.gemspec" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flickit.gemspec">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36585367">
-              <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.3080873">
+              <caret line="16" column="104" selection-start-line="16" selection-start-column="104" selection-end-line="16" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -680,8 +669,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flickit.gemspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36585367">
-          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.3080873">
+          <caret line="16" column="104" selection-start-line="16" selection-start-column="104" selection-end-line="16" selection-end-column="104" />
           <folding />
         </state>
       </provider>
