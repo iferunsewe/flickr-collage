@@ -9,9 +9,9 @@ require 'httparty'
 require 'rmagick'
 require 'open-uri'
 
-@keywords_controller = FlickIt::KeywordsController.new
-@collage = FlickIt::Collage.new
-
-photos = @keywords_controller.get_photos_for_keywords
-@collage.create(photos)
-@collage.delete_images
+# @keywords_controller = FlickIt::KeywordsController.new(ARGV)
+# @collage = FlickIt::Collage.new
+#
+# # photos = @keywords_controller.get_photos_for_keywords
+# # @collage.create(photos)
+# # @collage.delete_images
