@@ -1,4 +1,4 @@
-require './lib/search_flickr/version'
+require './lib/flickit/version'
 require './lib/flickr_api'
 require './lib/keywords_controller'
 require './lib/collage'
@@ -9,8 +9,8 @@ require 'httparty'
 require 'rmagick'
 require 'open-uri'
 
-@keywords_controller = SearchFlickr::KeywordsController.new
-@collage = SearchFlickr::Collage.new
+@keywords_controller = FlickIt::KeywordsController.new
+@collage = FlickIt::Collage.new
 
 photos = @keywords_controller.get_photos_for_keywords
 @collage.create(photos)

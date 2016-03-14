@@ -1,11 +1,6 @@
-require "./lib/search_flickr/version"
-require 'flickraw'
-require 'pry-byebug'
-require 'httparty'
 require 'rmagick'
-require 'open-uri'
 
-module SearchFlickr
+module FlickIt
   extend self
 
   class FlickrApi
@@ -18,6 +13,7 @@ module SearchFlickr
       @default_query = {'api_key' => @api_key}
     end
 
+    # Default request for flickr api
     def request_flickr_api(method, params={})
       puts "Requesting the flickr api request for the method #{method}"
       query = {"method" => method}.merge! params
@@ -27,6 +23,7 @@ module SearchFlickr
       response
     end
 
+    # Api call for the search method in the flickr api
     def get_flickr_search_result(keyword)
       response = request_flickr_api('flickr.photos.search', {"tags" => keyword, "sort" => 'interestingness-desc'})
       photos = response["rsp"]["photos"]["photo"]
@@ -41,13 +38,11 @@ module SearchFlickr
 
     def sort_results(keyword_results = get_flickr_results)
       keyword_results.map! do |results|
-        binding.pry
         results.first
         # selected_id = results.max_by do |result|
         # end['id']
         # selected_id
       end
-      p "KEYWORD RESULTS ----------------- #{keyword_results}"
       keyword_results
     end
 

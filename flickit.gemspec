@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'search_flickr/version'
+require 'flickit/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "untitled"
-  spec.version       = SearchFlickr::VERSION
+  spec.name          = "flickit"
+  spec.version       = FlickIt::VERSION
   spec.authors       = ["iferunsewe"]
   spec.email         = ["iferunsewe@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = "Create collage of flickr images"
+  spec.description   = "Creates collage of flickr images. Includes random words if less than ten arguments are entered§ "
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
