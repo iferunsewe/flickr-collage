@@ -17,4 +17,4 @@ If you enter less than ten keywords, a random word will be picked until a photo 
 6. Open flickr_collage.jpg and you will see the images.
  
  
-Thanks you!!!
+Thank you!!!
